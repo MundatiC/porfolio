@@ -16,6 +16,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#presentations">Presentations</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,6 +33,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#presentations" onclick="toggleMenu()">Presentations</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -63,36 +65,6 @@
           >
             Download AutoBiography
           </button>
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/03. CHALLENGE FACING MODERN SOCIETY.pdf')"
-          >
-            Modern Society Challenge
-          </button>
-             <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/04. Innovation in IT.pdf')"
-          >
-            Innovation in IT
-          </button>
-          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div> -->
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/caleb-mundati/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/MundatiC'"
-          />
-        </div>
       </div>
     </section>
     <section id="about">
@@ -274,80 +246,39 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- Existing project containers -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/rest-countries.jpg"
-                alt="Vertives Booking"
-                class="project-img"
-              />
+              <img src="./assets/rest-countries.jpg" alt="Vertives Booking" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Rest Countries</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MundatiC/rest-countries-api'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MundatiC/rest-countries-api'">
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mundatic.github.io/rest-countries-api/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://mundatic.github.io/rest-countries-api/'">
                 Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/result.png"
-                alt="Vertives Social"
-                class="project-img"
-              />
+              <img src="./assets/result.png" alt="Vertives Social" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Dictionary Web App</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/MundatiC/Dictionary-Web-App'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MundatiC/Dictionary-Web-App'">
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://mundatic.github.io/Dictionary-Web-App/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://mundatic.github.io/Dictionary-Web-App/'">
                 Live Demo
               </button>
             </div>
           </div>
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
         </div>
       </div>
+      <!-- Add this section after the #projects section -->
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -355,6 +286,55 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <section id="presentations">
+      <p class="section__text__p1">Watch My</p>
+      <h1 class="title">Presentations</h1>
+      <div class="experience-details-container">
+        <div class="video-grid">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6-71Y-NVcN0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Modern Society Challenge</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/03. CHALLENGE FACING MODERN SOCIETY.pdf')">
+                Modern Society Challenge PDF
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k_75XEqw1uQ" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Innovation in IT</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/04. Innovation in IT.pdf')">
+                Innovation in IT PDF
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSW4PWsqIao" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h2 class="experience-sub-title project-title">Importance of African Culture in Computer Science</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/African Culture.pdf')">
+                 African Culture PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -375,19 +355,17 @@
           />
           <p><a href="https://www.linkedin.com/in/caleb-mundati/">LinkedIn</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.github.com/MundatiC">Github</a></p>
+        </div>
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
       <p>Copyright &#169; 2024 Caleb Mundati. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>

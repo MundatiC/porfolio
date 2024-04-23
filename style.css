@@ -150,11 +150,9 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  margin: 5rem 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  
 }
 
 .section-container {
@@ -452,13 +450,26 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+#presentations {
+  position: relative;
+}
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.video-grid .details-container.color-container:last-child {
+  grid-column: 1 / -1; /* Span the last video across the entire row */
+  justify-self: center; /* Center the video horizontally */
+}
+
+/* CONTACT */
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
 }
 
 .contact-info-upper-container {
@@ -467,9 +478,8 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  background: rgb(250, 250, 250);
+  margin: 1rem auto; /* Reduced margin */
 }
 
 .contact-info-container {
@@ -495,10 +505,22 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  position: relative;
   margin: 0 1rem;
 }
 
 footer p {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack videos vertically on smaller screens */
+  }
+
+  .video-grid .details-container.color-container:last-child {
+    grid-column: auto; /* Reset the spanning behavior on smaller screens */
+    justify-self: auto;
+  }
+}
+
