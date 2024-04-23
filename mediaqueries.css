@@ -112,6 +112,10 @@
     max-width: 100%; /* Set maximum width for containers */
   }
 
+  .video-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
 
   .sr-only, .cont-text{
     display: none;
